@@ -10,7 +10,7 @@ app.set("port", process.env.PORT || 80);
 // Middlewares
 // const corsOptions = {origin: "http://localhost:4200"}
 app.use(cors());
-app.use(morgan("start"));
+app.use(morgan("dev"));
 app.use(express.json());
 
 // Routes

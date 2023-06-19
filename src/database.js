@@ -4,19 +4,33 @@ const mongoose = require("mongoose");
 const URI = "mongodb+srv://LugaresDUI99:LugaresDUI99@lugaresdui99.jyxdbru.mongodb.net/?retryWrites=true&w=majority";
 
 mongoose
-    .connect(URI, {
-        useNewUrlParser: true,
-        useUnifiedTopology: true,
-        //useFindAndModify: false
-    })
-    .then((db) => console.log("db is connected"))
-    .catch((err) => console.error('db is not connected ---- ', err));
+  .connect(URI, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+    //useFindAndModify: true
+  })
+  .then((db) => console.log("db is connected"))
+  .catch((err) => console.error('db is not connected ---- ', err));
 
 module.exports = mongoose;
 
+//t10N1arHQjPKKjUHRerBiCUS9WFg2ZSVKPMAuVR5csZAd2hW9LBVGaRi4lckDBqx
+
+/*
+curl --location --request POST 'https://us-east-1.aws.data.mongodb-api.com/app/data-nxaxa/endpoint/data/v1/action/findOne' \
+--header 'Content-Type: application/json' \
+--header 'Access-Control-Request-Headers: *' \
+--header 'api-key: t10N1arHQjPKKjUHRerBiCUS9WFg2ZSVKPMAuVR5csZAd2hW9LBVGaRi4lckDBqx' \
+--data-raw '{
+    "collection":"<COLLECTION_NAME>",
+    "database":"<DATABASE_NAME>",
+    "dataSource":"LugaresDUI99",
+    "projection": {"_id": 1}
+}'*/
 
 
-/*const { MongoClient, ServerApiVersion } = require('mongodb');
+/*
+const { MongoClient, ServerApiVersion } = require('mongodb');
 const uri = "mongodb+srv://LugaresDUI99:<password>@lugaresdui99.jyxdbru.mongodb.net/?retryWrites=true&w=majority";
 
 // Create a MongoClient with a MongoClientOptions object to set the Stable API version
