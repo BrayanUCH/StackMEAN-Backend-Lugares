@@ -5,7 +5,7 @@ const morgan = require("morgan");
 const app = express();
 
 // Settings
-app.set("port", process.env.PORT || 4100);
+app.set("port", process.env.PORT || 80);
 
 // Middlewares
 // const corsOptions = {origin: "http://localhost:4200"}

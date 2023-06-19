@@ -11,6 +11,7 @@ lugarCtrl.createLugar = async (req, res, next) => {
     const lugar = new Lugar({
         nombre: req.body.nombre,
         ubicacion: req.body.ubicacion,
+        descripcion: req.body.descripcion,
         numeroTelefonico: req.body.numeroTelefonico,
         numeroTelefonico2: req.body.numeroTelefonico2,
         horario: req.body.horario,
@@ -39,3 +40,5 @@ lugarCtrl.deleteLugar = async (req, res, next) => {
 };
 
 module.exports = lugarCtrl;
+
+

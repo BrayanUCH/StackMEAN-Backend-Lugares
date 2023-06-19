@@ -5,6 +5,7 @@ const lugarSchema = new Schema(
     {
         nombre: { type: String, required: true },
         ubicacion: { type: String, required: true },
+        descripcion: { type: String, required: true },
         numeroTelefonico: { type: String, required: true },
         numeroTelefonico2: { type: String, required: true },
         horario: { type: String, required: true },
